@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    background-image: url(grass_background.jpg);
+}
+
+.font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.style{
+    background: rgba(256,256,256,0.2);
+    display: inherit;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+
+.container{
+    display: block;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 50px auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    position: relative;
+
+}
+
+.container .title{
+    display: inherit;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.container input{
+    width: 80%;
+    margin-top: 40px;
+    padding: 8px;
+    outline: none;
+    background: transparent;
+    transition: 700ms all;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.container input:focus + .text{
+    margin-top: -66px;
+}
+
+.container input:focus {
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+}
+
+.form .text{
+   margin-left: 25px;
+   margin-top: -30px;
+   position: absolute;
+   z-index: -10;
+   color: rgba(256,256,256,1);
+   transition: 500ms all;
+}
+
+.button{
+    font-size: 1.5em; 
+    padding: 8px 15px;
+    margin: 40px auto 20px auto;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.button:hover{
+    transform: scale(1.2);
+    color: rgb(11, 194, 11);
+    background-color: white;
+}
+
+.fijar{
+    margin-top: -66px !important ;
+}
+
+
+@media (max-width:769px){
+    .container{
+        width: 60%;
+    }
+}
+
+@media (max-width:426px){
+    .container{
+        width: 70%;
+    }
+}
